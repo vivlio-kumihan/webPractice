@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+html {
+  font-size: 15px;
+  scroll-behavior: smooth;
+    /*  ページ先頭の要素に付ける。戻る位置を調整してくれる。
+        scroll-margin-top: 80px;  */
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1050px;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: #eee;
+}
+
