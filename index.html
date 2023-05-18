@@ -8,15 +8,39 @@
   <link rel="stylesheet" href="./assets/css/destyle.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="./assets/css/style.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
   <script src="https://unpkg.com/gsap@3.11.0/dist/CSSRulePlugin.min.js"></script>
   <script src="./assets/js/behavior.js" defer></script>
 </head>
 
 <body>
-  <div class="container">
+  <!-- 疑問点 HTMLCollectionはforEachで読めない？ -->
+  <header id="for-sp-menu-switch">
+    <button href="" id="header-menu-button">
+      <figure class="btn-line"></figure>
+      <figure class="btn-line"></figure>
+      <figure class="btn-line"></figure>
+    </button>
+  </header>
+
+  <!-- 確認 + と p:nth-of-type(n+2) -->
+  <div id="container">
+    <p>hello1-1</p>
+    <div class="wrapper">
+      <p>hello2-1</p>
+      <p>hello2-2</p>
+      <p>hello2-3</p>
+      <div class="wrapper">
+        <p>hello3-1</p>
+        <p>hello3-2</p>
+        <p>hello3-3</p>
+      </div>
+      <p>hello2-4</p>
+      <p>hello2-5</p>
+      <p>hello2-6</p>
+    </div>
+    <p>hello1-2</p>
+    <p>hello1-3</p>
+    <p>hello1-4</p>
   </div>
 </body>
-
-</html>
